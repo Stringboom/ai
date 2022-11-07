@@ -57,3 +57,29 @@ data[0].x = xValues;
 data[0].y = yValues;
 layout.title = "Graph With Plotly - " + exp;
 Plotly.newPlot("tan", data, layout);
+
+// zero
+exp = "0";
+xValues = [];
+yValues = [];
+for (var x = 0; x <= 10; x += 0.1) { 
+  yValues.push(eval(exp)); 
+  xValues.push(x);
+}
+data[0].x = xValues;
+data[0].y = yValues;
+layout.title = "Graph With Plotly - " + exp;
+Plotly.newPlot("zero", data, layout);
+
+// extra
+exp = "x";
+xValues = [];
+yValues = [];
+for (var x = 0; x <= 10; x += 0.1) { 
+  yValues.push(eval(exp)); 
+  xValues.push(x);
+}
+data[0].x = xValues;
+data[0].y = yValues;
+layout.title = "Graph With Plotly - " + exp;
+Plotly.newPlot("extra", data, layout);
