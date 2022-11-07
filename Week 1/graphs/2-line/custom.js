@@ -5,7 +5,7 @@ var yArray = Array.from({length: 20}, () => Math.random()*(6-3)+3).sort();
 var data = [{
   x:xArray,
   y:yArray,
-  mode:"markers",
+  mode:"lines",
   marker: {
     color: 'rgb(171, 255, 46)',
     size: 8,
